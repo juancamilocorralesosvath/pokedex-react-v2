@@ -1,0 +1,39 @@
+/* 
+here in the main file we import all the partials we created 
+(our snippet-kind of files on the various directoies we created).
+Be aware because order matters: the order of the imports will be the order sass
+will follow during processing. 
+    --> All of the logic should be placed at the top of the main file.
+
+*/
+//abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+//vendors
+@import 'vendors/icons';
+//base
+@import 'base/animations';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utilities';
+//components
+@import 'components/buttons';
+@import 'components/card';
+@import 'components/form';
+//layout
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/navigation';
+//pages
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/home';
+//themes
+@import 'themes/blue';
+@import 'themes/bluish';
+
+
+body{
+    background-color: $color-primary-light;
+}
