@@ -1,0 +1,43 @@
+.card {
+    height: 30rem;
+    background-color: $color-primary-dark;
+    margin: 2rem;
+    border-radius: 1rem;
+    //ok, this is simply amazing! Jordan rocks!
+    //the property flex is as follows: 
+    //flex: <flex-grow> <flex-shrink> <flex-basis>
+    //flex-grow: to set if the element grows and force the other elements to shrink around it
+    //flex-shrink: to set if the element has to shrink and let the other elements grow to fill the space
+    //flex-basis: we can provide which size do we want for the element. when we indicate 24% is to ensure we want three cards spaced in a row
+    flex: 0 0 24%;
+    //
+    transition: all 0.2s;
+
+    &__title{
+        color: $color-different-white;
+        font-size: 4rem;
+        font-family: $title;
+        text-transform: capitalize;
+    }
+    &__img{
+        height: 25rem;
+        width: 25rem;
+    }
+    //begins the interesting part:
+    &:hover{
+        //here we move the element in the y-axis
+        //very important note: when using TRANSFORM, it is super important to 
+        //use the TRANSITION property
+        transform: translateY(-3px);
+        //we give the cards a shadow when the user hovers
+        //box-shadow: <offset-x> | <offset-y> | <blur-radius> | <color>
+        box-shadow: 0 1rem 2rem rgba($color-primary-dark, 0.6);
+        cursor: pointer;
+    }
+    //I don't understand pretty well this active and focus thing.
+    &:active,
+    &:focus{
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba($color-primary-dark, 0.35);
+    }
+}

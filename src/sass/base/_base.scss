@@ -1,0 +1,22 @@
+//global selector
+*,
+//what does it mean by selected? select what?
+//inserts something after the content has selected
+*::after,
+//inserts something before the content has selected
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    //I don't understand:
+    //defines what 1rem is
+    font-size: 62.5%; //1rem = 10px 10px/16px = 62.5%
+}
+body{
+    box-sizing: border-box;
+    padding: 3rem;
+    text-align: center;
+    background-image: linear-gradient(to right bottom, rgba($color-gray-light-1, 0.8), rgba($color-gray-light-2, 0.8)), url(../../images/more-leaves.png);
+}

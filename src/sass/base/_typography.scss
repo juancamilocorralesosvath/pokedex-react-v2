@@ -1,0 +1,12 @@
+.primary-heading{
+    //woooooooow! what an effect! 
+    //I don't understand how she manages to achieve this effect!!!
+    //Joohn!
+    font-family: $title;
+    font-size: 8rem;
+    padding: 2rem;
+    background-image: linear-gradient(to right, $color-yellow, $color-dark-yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 0.5px $color-primary-light;
+}

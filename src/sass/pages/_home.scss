@@ -1,0 +1,11 @@
+.cards{
+    //what we are doing here is using flexbox to line all the cards up in a row.
+    //the container here is holding all of the cards, so they will be in just one row.
+    display: flex;
+    //this is why we need the wrap property: it ensures the cards move to the next line
+    //instead of continuing.
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    min-width: 90vh;
+}

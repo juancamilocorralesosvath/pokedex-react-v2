@@ -14,13 +14,13 @@ const AllPokemon = () => {
     console.log(pokemons);
     console.log(Object.entries(pokemons)[3] && Object.entries(pokemons)[3][1]);
     return(
-        <div>
-            <div> 
+       
+            <div className='cards' > 
+            {/* todo: console log del index para ver que es lo que pasa */}
                 {Object.entries(pokemons)[3] && Object.entries(pokemons)[3][1].map((pokemon, index)=>{
                     return <PokemonCard key={index} {...pokemon} id={index + 1} />;
                 })}
             </div>
-        </div>
     );
 };
 

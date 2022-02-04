@@ -1,4 +1,4 @@
 
 export const getPokemon = (props) => {
-    return fetch(`https://pokeapi.co/api/v2/pokemon/${props.name}`).then((response)=> response.json());
+    return fetch(`https://pokeapi.co/api/v2${props}`).then((response)=> response.json());
 };

@@ -1,7 +1,12 @@
 // COLOR VARIABLES
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Miltonian+Tattoo&display=swap');
 $color-primary: #00008b; //this is a dark blue color
 $color-primary-light: #0466C8;
 $color-primary-dark: #023E7D;
+
+$color-yellow: #ffcb05;
+$color-dark-yellow: #c7a008;
+
 $color-gray-light-1: #f7f7f7;
 $color-gray-light-2: #eee;
 
@@ -10,4 +15,9 @@ $color-gray-dark-2: #999;
 $color-gray-dark-3: #333;
 
 $color-white: #fff;
+$color-different-white: #ebebeb;
 $color-black: #000;
+$color-different-black: #0e1111;
+//FONTS
+$title: 'Miltonian Tattoo', cursive;
+$default: 'Lato', sans-serif;

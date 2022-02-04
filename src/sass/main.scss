@@ -14,20 +14,18 @@ will follow during processing.
 @import 'vendors/icons';
 //base
 @import 'base/animations';
-@import 'base/reset';
+@import 'base/base';
 @import 'base/typography';
 @import 'base/utilities';
 //components
 @import 'components/buttons';
-@import 'components/card';
-@import 'components/form';
+@import 'components/pokemonCard';
 //layout
 @import 'layout/footer';
 @import 'layout/header';
 @import 'layout/navigation';
 //pages
-@import 'pages/about';
-@import 'pages/contact';
+@import 'pages/pokedex';
 @import 'pages/home';
 //themes
 @import 'themes/blue';
@@ -35,5 +33,6 @@ will follow during processing.
 
 
 body{
-    background-color: $color-primary-light;
+    background-color: $color-white;
+
 }
