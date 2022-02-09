@@ -11,13 +11,14 @@ const AllPokemon = () => {
             setPokemons(data);
         });
     }, []);
-    console.log(pokemons);
-    console.log(Object.entries(pokemons)[3] && Object.entries(pokemons)[3][1]);
+    // to see what we got: console.log(pokemons);
+    // to see our condition: console.log(Object.entries(pokemons)[3] && Object.entries(pokemons)[3][1]);
     return(
        
             <div className='cards' > 
             {/* todo: console log del index para ver que es lo que pasa */}
                 {Object.entries(pokemons)[3] && Object.entries(pokemons)[3][1].map((pokemon, index)=>{
+                    //console.log('from allpokemon, this is the index item:',index, 'this is the pokemon item:',pokemon)
                     return <PokemonCard key={index} {...pokemon} id={index + 1} />;
                 })}
             </div>
